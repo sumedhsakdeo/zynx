@@ -8,25 +8,18 @@
 
 class   zinc_handler    {
    private:
-       const std::string         path = "/usr/local/";
-       const std::string         lib_ext = ".so";
-       map<std::string, void*>   handler_map;
-       zinc_handler             *handler = NULL;
-   protected:
+       std::map<std::string, char*>   handler_map;
+       static zinc_handler             *handler;
        zinc_handler()   {
        }
    public:
-
-       
-       static zinc_handler* getInstance()   {
-            if (handler == NULL)    {
-               handler = new zinc_handler(); 
-            }
-            return handler;
-       }
+       static const std::string         path;
+       static const std::string         lib_ext;
       
-       void* get_lib_handle(const std::string &app)  {
-            void *return_handle =  handler_map.find(app); 
+       static zinc_handler* getInstance();
+      
+       char* get_lib_handle(const std::string app)  {
+            char *return_handle =  handler_map[app]; 
             if (return_handle == NULL)  {
                 return_handle = put_lib_handler(app);
             }   
@@ -34,18 +27,18 @@ class   zinc_handler    {
        }
 
        //  put handler
-       void* put_lib_handler(const std::string &app) {
+       char* put_lib_handler(const std::string &app) {
 
             std::string lib_path; 
             lib_path.append(path);
             lib_path.append(app);
             lib_path.append(lib_ext);
 
-            void *lib_handle = dlopen(lib_path, RTLD_LAZY);
+            char *lib_handle = (char*) dlopen(lib_path.c_str(), RTLD_LAZY);
             if (!lib_handle)    {
                 return NULL; 
             }
-            handler_map.insert(pair<std::string,void*>(app, lib_handle));
+            handler_map.insert(std::pair<std::string,char*>(app, lib_handle));
             return lib_handle;
        }
 
@@ -54,7 +47,7 @@ class   zinc_handler    {
 
        //   close all the handlers open
        ~zinc_handler() {
-           map<std::string,void*>::iterator it;
+           std::map<std::string,char*>::iterator it;
            for (it = handler_map.begin(); it != handler_map.end(); it++)    {
                 void *lib_handle = (*it).second;
                 dlclose(lib_handle);  
