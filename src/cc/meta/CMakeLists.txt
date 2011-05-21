@@ -22,6 +22,7 @@ request.cc
 restore.cc
 startup.cc
 util.cc
+handler.cc
 )
 
 add_library (kfsMeta STATIC ${lib_srcs})
