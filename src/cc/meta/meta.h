@@ -28,6 +28,7 @@
 #include <fstream>
 #include <string>
 #include <cassert>
+#include <vector>
 #include "common/config.h"
 #include "base.h"
 
@@ -146,8 +147,10 @@ public:
 	//!< to append a chunk to the file.  The metaserver picks the file offset
 	//!< for the chunk based on what has been allocated so far.
 	off_t nextChunkOffset;
+    //!< array of string which uniquely identify handler
+    std::vector optionalHandler;
 
-	MetaFattr(FileType t, fid_t id, int16_t n):
+	MetaFattr(FileType t, fid_t id, int16_t n, const std::string& optional_handler = NULL):
 		Meta(KFS_FATTR, id), type(t), 
 		numReplicas(n), chunkcount(0), filesize(-1),
 		nextChunkOffset(0)
@@ -157,16 +160,20 @@ public:
 		mtime = ctime = crtime;
 		if (type == KFS_DIR)
 			filesize = 0;
+        if (optional_handler != NULL)
+            this->optional_handler.push_back(optional_handler);
 	}
 
 	MetaFattr(FileType t, fid_t id, struct timeval mt,
 		struct timeval ct, struct timeval crt,
-		long long c, int16_t n): Meta(KFS_FATTR, id),
+		long long c, int16_t n, const std::string& optional_handler = NULL): Meta(KFS_FATTR, id),
 		type(t), numReplicas(n), mtime(mt), ctime(ct),
 		crtime(crt), chunkcount(c), filesize(-1), nextChunkOffset(0)
 	{ 
 		if (type == KFS_DIR)
 			filesize = 0;
+        if (optional_handler != NULL)
+            this->optional_handler.push_back(optional_handler);
 	}
 
 	MetaFattr(): Meta(KFS_FATTR, 0), type(KFS_NONE) { }
