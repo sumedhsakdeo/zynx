@@ -516,7 +516,7 @@ public:
     /// @retval on success, fd corresponding to the created file;
     /// -errno on failure.
     ///
-    int Create(const char *pathname, int numReplicas = 3, bool exclusive = false);
+    int Create(const char *pathname, int numReplicas = 3, bool exclusive = false, const std::string optional_handler = "");
 
     ///
     /// Remove a file which is specified by a complete path.

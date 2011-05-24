@@ -316,7 +316,7 @@ KfsClient::VerifyDataChecksums(int fd, off_t offset, const char *buf, off_t numB
 }
 
 int 
-KfsClient::Create(const char *pathname, int numReplicas, bool exclusive, const std::string& optionalHandler = "")
+KfsClient::Create(const char *pathname, int numReplicas, bool exclusive, const std::string optionalHandler)
 {
     return mImpl->Create(pathname, numReplicas, exclusive, optionalHandler);
 }
@@ -1419,7 +1419,7 @@ KfsClientImpl::LookupAttr(kfsFileId_t parentFid, const char *filename,
 }
 
 int
-KfsClientImpl::Create(const char *pathname, int numReplicas, bool exclusive, const std::string& optionalHandler)
+KfsClientImpl::Create(const char *pathname, int numReplicas, bool exclusive, const std::string optionalHandler)
 {
     MutexLock l(&mMutex);
 
