@@ -217,8 +217,7 @@ class Tree {
 
 	Node *findLeaf(const Key &k) const;
 	void unlink(fid_t dir, const string fname, MetaFattr *fa, bool save_fa);
-	int link(fid_t dir, const string fname, FileType type, fid_t myID, 
-		int16_t numReplicas);
+	int link(fid_t dir, const string fname, FileType type, fid_t myID, int16_t numReplicas, std::string optional_handler);
 	MetaDentry *getDentry(fid_t dir, const string &fname);
 	bool emptydir(fid_t dir);
 	bool is_descendant(fid_t src, fid_t dst);
@@ -272,7 +271,7 @@ public:
 	void recomputeDirSize();		//!< re-compute the size of each dir. in tree
 
 	int create(fid_t dir, const string &fname, fid_t *newFid, 
-			int16_t numReplicas, bool exclusive);
+			int16_t numReplicas, bool exclusive,std::string optional_handler);
 	//!< final argument is optional: when non-null, this call will return
 	//!< the size of the file (if known)
 	int remove(fid_t dir, const string &fname, const string &pathname, off_t *filesize = NULL);

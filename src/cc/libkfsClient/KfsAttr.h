@@ -96,6 +96,8 @@ struct KfsServerAttr {
     bool	isDirectory;
     /// what is the deg. of replication for this file
     int16_t numReplicas;
+    /// what are the optional handlers associated with this file
+    std::string optionalHandler;
 };
 
 
@@ -119,6 +121,10 @@ struct FileAttr {
     /// what is the deg. of replication for this file
     int16_t numReplicas;
 
+
+    /// what are the optional handlers associated with this file
+    std::string optionalHandler;
+
     FileAttr() {
         fileId = (kfsFileId_t) -1;
         fileSize = 0;
@@ -132,6 +138,7 @@ struct FileAttr {
         chunkCount = 0;
         numReplicas = 0;
         isDirectory = false;
+        optionalHandler = "";
     }
     void Init(bool isDir) {
         isDirectory = isDir;
@@ -143,6 +150,7 @@ struct FileAttr {
         fileId = other.fileId;
         chunkCount = other.chunkCount;
         numReplicas = other.numReplicas;
+        optionalHandler = other.optionalHandler;
         fileSize = 0; // need to compute this
         isDirectory = other.isDirectory;
         mtime = other.mtime;
@@ -170,6 +178,8 @@ struct KfsFileAttr {
     off_t	fileSize;
     /// what is the deg. of replication for this file
     int16_t numReplicas;
+    /// what are the optional handlers associated with this file
+    std::string optionalHandler;
 
     KfsFileAttr() : fileSize(-1) { }
 
@@ -186,6 +196,7 @@ struct KfsFileAttr {
         ctime = other.ctime;
         crtime = other.crtime;
         numReplicas = other.numReplicas;
+        optionalHandler = other.optionalHandler;
         return *this;
     }
 
@@ -197,6 +208,7 @@ struct KfsFileAttr {
         ctime = other.ctime;
         crtime = other.crtime;
         numReplicas = other.numReplicas;
+        optionalHandler = other.optionalHandler;
         return *this;
     }
 

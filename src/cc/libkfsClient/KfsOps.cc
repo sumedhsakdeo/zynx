@@ -63,7 +63,8 @@ CreateOp::Request(ostream &os)
     os << "Parent File-handle: " << parentFid << "\r\n";
     os << "Filename: " << filename << "\r\n";
     os << "Num-replicas: " << numReplicas << "\r\n";
-    os << "Exclusive: " << e << "\r\n\r\n";
+    os << "Exclusive: " << e << "\r\n";
+    os << "OptionalHandler: " << optionalHandler << "\r\n\r\n";
 }
 
 void

@@ -203,10 +203,12 @@ public:
     /// @param[in] numReplicas the desired degree of replication for
     /// the file.
     /// @param[in] exclusive  create will fail if the exists (O_EXCL flag)
+    /// @param[in] optional handler string to be associated with each file system
+    /// namespace object
     /// @retval on success, fd corresponding to the created file;
     /// -errno on failure.
     ///
-    int Create(const char *pathname, int numReplicas = 3, bool exclusive = false);
+    int Create(const char *pathname, int numReplicas = 3, bool exclusive = false, const std::string& optionalHandler = "");
 
     ///
     /// Remove a file which is specified by a complete path.

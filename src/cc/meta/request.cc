@@ -342,8 +342,9 @@ MetaCreate::handle()
 		return;
 	}
         fid = 0;
+	//TODO:ZYNX UPDATE add optional_handler
 	status = metatree.create(dir, name, &fid,
-					numReplicas, exclusive);
+					numReplicas, exclusive, optional_handler);
 }
 
 /* virtual */ void
@@ -1424,8 +1425,7 @@ MetaCreate::log(ofstream &file) const
 	gettimeofday(&t, NULL);
 
 	file << "create/dir/" << dir << "/name/" << name <<
-		"/id/" << fid << "/numReplicas/" << (int) numReplicas << 
-		"/ctime/" << showtime(t) << '\n';
+		"/id/" << fid << "/numReplicas/" << (int) numReplicas << "/optional_handler/" << optional_handler << "/ctime/" << showtime(t) << '\n';
 	return file.fail() ? -EIO : 0;
 }
 
@@ -1961,6 +1961,8 @@ parseHandlerCreate(Properties &prop, MetaRequest **r)
 	int16_t numReplicas;
 	bool exclusive;
 	int protoVers;
+	//String to receive the sent handler
+	const char* optional_handler;
 
 	seq = prop.getValue("Cseq", (seq_t) -1);
 	dir = prop.getValue("Parent File-handle", (fid_t) -1);
@@ -1978,7 +1980,8 @@ parseHandlerCreate(Properties &prop, MetaRequest **r)
 	exclusive = (prop.getValue("Exclusive", 1)) == 1;
 	protoVers = prop.getValue("Client-Protocol-Version", (int) 0);
 
-	*r = new MetaCreate(seq, protoVers, dir, name, numReplicas, exclusive);
+	optional_handler = prop.getValue("OptionalHandler", "");
+	*r = new MetaCreate(seq, protoVers, dir, name, numReplicas, exclusive,optional_handler);
 	return 0;
 }
 

@@ -142,13 +142,11 @@ struct CreateOp : public KfsOp {
     kfsFileId_t fileId; // result
     int numReplicas; // desired degree of replication
     bool exclusive; // O_EXCL flag
-    std::vector<string> optional_handler;   // list of optional handlers
-    CreateOp(kfsSeq_t s, kfsFileId_t p, const char *f, int n, bool e, const std::string& handler_key="") :
+    std::string optionalHandler;   // optional handler
+    CreateOp(kfsSeq_t s, kfsFileId_t p, const char *f, int n, bool e, const std::string& h="") :
         KfsOp(CMD_CREATE, s), parentFid(p), filename(f),
-        numReplicas(n), exclusive(e)
+        numReplicas(n), exclusive(e), optionalHandler(h)
     {
-        if (!handler_key.empty())
-            optional_handler.push_back(handler_key);
     }
     void Request(std::ostream &os);
     virtual void ParseResponseHeaderSelf(const Properties& prop);

@@ -207,3 +207,19 @@ KFS::pop_time(struct timeval &tv, const string tag, deque <string> &c, bool ok)
 	c.pop_front();
 	return (tv.tv_sec != -1 && tv.tv_usec != -1);
 }
+
+/*!
+ * \brief removes the handler name from the log file for replay
+ */
+
+bool
+KFS::pop_handler(string& optional_handler,const string tag, deque <string> &c, bool ok)
+{
+	if(!ok || c.size() < 2|| c.front() != tag)
+		return false;
+	
+	c.pop_front();	
+	optional_handler = c.front();
+	c.pop_front();
+	return true;
+}
