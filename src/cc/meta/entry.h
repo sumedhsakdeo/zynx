@@ -85,6 +85,6 @@ extern bool pop_type(
 	FileType &t, const string tag, deque <string> &c, bool ok);
 extern bool pop_time(
 	struct timeval &tv, const string tag, deque <string> &c, bool ok);
-
+extern bool pop_handler(string& optional_hander, const string handler_name, deque<string> &c, bool ok);
 }
 #endif // !defined(KFS_ENTRY_H)

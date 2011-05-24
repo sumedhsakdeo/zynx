@@ -95,12 +95,17 @@ MetaFattr::show() const
 {
 	static string fname[] = { "empty", "file", "dir" };
 
+	//!<Adding list of handlers display to the show meta file attibute would display as a comma seperated list
+
+
+
 	return "fattr/" + fname[type] + "/id/" + toString(id()) +
 		"/chunkcount/" + toString(chunkcount) 
 		+ "/numReplicas/" + toString(numReplicas) 
 		+ "/mtime/" + showtime(mtime) 
 		+ "/ctime/" + showtime(ctime) + "/crtime/" + showtime(crtime) 
-		+ "/filesize/" + toString(filesize);
+		+ "/filesize/" + toString(filesize)
+		+ "/list Of Handlers/" + optional_handler;
 }
 
 void
