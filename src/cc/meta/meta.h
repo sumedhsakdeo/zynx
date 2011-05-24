@@ -151,9 +151,10 @@ public:
 	std::string optional_handler;
 
 	MetaFattr(FileType t, fid_t id, int16_t n, const std::string handler_key = ""):
+
 		Meta(KFS_FATTR, id), type(t), 
 		numReplicas(n), chunkcount(0), filesize(-1),
-		nextChunkOffset(0)
+		nextChunkOffset(0), optionalHandler(h)
 	{
 		int UNUSED_ATTR s = gettimeofday(&crtime, NULL);
 		assert(s == 0);
@@ -168,7 +169,7 @@ public:
 		struct timeval ct, struct timeval crt,
 		long long c, int16_t n, const std::string handler_key = ""): Meta(KFS_FATTR, id),
 		type(t), numReplicas(n), mtime(mt), ctime(ct),
-		crtime(crt), chunkcount(c), filesize(-1), nextChunkOffset(0)
+		crtime(crt), chunkcount(c), filesize(-1), nextChunkOffset(0), optionalHandler(h)
 	{ 
 		if (type == KFS_DIR)
 			filesize = 0;

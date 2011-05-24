@@ -316,9 +316,9 @@ KfsClient::VerifyDataChecksums(int fd, off_t offset, const char *buf, off_t numB
 }
 
 int 
-KfsClient::Create(const char *pathname, int numReplicas, bool exclusive)
+KfsClient::Create(const char *pathname, int numReplicas, bool exclusive, const std::string& optionalHandler = "")
 {
-    return mImpl->Create(pathname, numReplicas, exclusive);
+    return mImpl->Create(pathname, numReplicas, exclusive, optionalHandler);
 }
 
 int 
@@ -1419,7 +1419,7 @@ KfsClientImpl::LookupAttr(kfsFileId_t parentFid, const char *filename,
 }
 
 int
-KfsClientImpl::Create(const char *pathname, int numReplicas, bool exclusive)
+KfsClientImpl::Create(const char *pathname, int numReplicas, bool exclusive, const std::string& optionalHandler)
 {
     MutexLock l(&mMutex);
 
@@ -1434,7 +1434,7 @@ KfsClientImpl::Create(const char *pathname, int numReplicas, bool exclusive)
     if (filename.size() >= MAX_FILENAME_LEN)
 	return -ENAMETOOLONG;
 
-    CreateOp op(nextSeq(), parentFid, filename.c_str(), numReplicas, exclusive);
+    CreateOp op(nextSeq(), parentFid, filename.c_str(), numReplicas, exclusive, optionalHandler);
     (void)DoMetaOpWithRetry(&op);
     if (op.status < 0) {
 	KFS_LOG_VA_DEBUG("status %d from create RPC", op.status);
@@ -1450,8 +1450,9 @@ KfsClientImpl::Create(const char *pathname, int numReplicas, bool exclusive)
 
     FileAttr *fa = FdAttr(fte);
     fa->fileId = op.fileId;
+    fa->optionalHandler = optionalHandler;
     fa->Init(false);	// is an ordinary file
-
+    
     FdInfo(fte)->openMode = O_RDWR;
 
     return fte;
