@@ -695,6 +695,7 @@ LookupOp::ParseResponseHeaderSelf(const Properties &prop)
     fattr.chunkCount = prop.getValue("Chunk-count", 0);
     fattr.fileSize = prop.getValue("File-size", (off_t) -1);
     fattr.numReplicas = prop.getValue("Replication", 1);
+    fattr.optionalHandler = prop.getValue("OptionalHandler", ""); 
     s = prop.getValue("M-Time", "");
     GetTimeval(s, fattr.mtime);
 

@@ -116,19 +116,19 @@ replay_create(deque <string> &c)
 	int status = 0;
 	int16_t numReplicas;
 	struct timeval ctime;
-	string optional_handler;
+	string optionalHandler;
 
 	bool ok = pop_parent(parent, c);
 	ok = pop_name(myname, "name", c, ok);
 	ok = pop_fid(me, "id", c, ok);
 	ok = pop_short(numReplicas, "numReplicas", c, ok);
-	ok = pop_handler(optional_handler, "optional_handler", c, ok);
+	ok = pop_handler(optionalHandler, "optionalHandler", c, ok);
 	// if the log has the ctime, pass it thru
 	bool gottime = pop_time(ctime, "ctime", c, ok);
 	if (ok) {
 		// for all creates that were successful during normal operation,
 		// when we replay it should work; so, exclusive = false
-		status = metatree.create(parent, myname, &me, numReplicas, false, optional_handler);
+		status = metatree.create(parent, myname, &me, numReplicas, false, optionalHandler);
 		if (status == 0)
 			updateSeed(fileID, me);
 		if (gottime) {

@@ -103,20 +103,20 @@ absolute(const string path)
  * \param[in] type	file or directory
  * \param[in] myID	fid of new object
  * \param[in] numReplicas desired degree of replication for file
- * \param[in[ optional_handler user specified handler for the file
+ * \param[in[ optionalHandler user specified handler for the file
  *
  * Create a directory entry and file attributes for the new object.
  * But don't create attributes for "." and ".." links, since these
  * share the directory's attributes.
  */
 int
-Tree::link(fid_t dir, const string fname, FileType type, fid_t myID, int16_t numReplicas, const std::string optional_handler = "")
+Tree::link(fid_t dir, const string fname, FileType type, fid_t myID, int16_t numReplicas, const std::string optionalHandler = "")
 {
 	assert(legalname(fname));
 	MetaDentry *dentry = new MetaDentry(dir, fname, myID);
 	insert(dentry);
 	if (fname != "." && fname != "..") {
-		MetaFattr *fattr = new MetaFattr(type, dentry->id(), numReplicas, optional_handler);
+		MetaFattr *fattr = new MetaFattr(type, dentry->id(), numReplicas, optionalHandler);
 		insert(fattr);
 	}
 	return 0;
@@ -129,13 +129,13 @@ Tree::link(fid_t dir, const string fname, FileType type, fid_t myID, int16_t num
  * \param[out] newFid	id of new file
  * \param[in] numReplicas desired degree of replication for file
  * \param[in] exclusive  model the O_EXCL flag of open()
- * \param[in] optional_handler the optional_handler handler for the file
+ * \param[in] optionalHandler the optionalHandler handler for the file
  *
  * \return		status code (zero on success)
  */
 int
 Tree::create(fid_t dir, const string &fname, fid_t *newFid,
-		int16_t numReplicas, bool exclusive, std::string optional_handler = "")
+		int16_t numReplicas, bool exclusive, std::string optionalHandler = "")
 {
 	if (!legalname(fname)) {
 		KFS_LOG_STREAM_WARN << "Bad file name " << fname <<
@@ -174,7 +174,7 @@ Tree::create(fid_t dir, const string &fname, fid_t *newFid,
 
 	UpdateNumFiles(1);
 
-	return link(dir, fname, KFS_FILE, *newFid, numReplicas,optional_handler);
+	return link(dir, fname, KFS_FILE, *newFid, numReplicas,optionalHandler);
 }
 
 /*!

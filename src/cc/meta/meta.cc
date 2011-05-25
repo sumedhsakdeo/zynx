@@ -105,7 +105,7 @@ MetaFattr::show() const
 		+ "/mtime/" + showtime(mtime) 
 		+ "/ctime/" + showtime(ctime) + "/crtime/" + showtime(crtime) 
 		+ "/filesize/" + toString(filesize)
-		+ "/list Of Handlers/" + optional_handler;
+		+ "/optionalHandler/" + optionalHandler;
 }
 
 void

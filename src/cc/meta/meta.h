@@ -148,7 +148,7 @@ public:
 	//!< for the chunk based on what has been allocated so far.
 	off_t nextChunkOffset;
 	//!< array of string which uniquely identify handler
-	std::string optional_handler;
+	std::string optionalHandler;
 
 	MetaFattr(FileType t, fid_t id, int16_t n, const std::string handler_key = ""):
 
@@ -162,7 +162,7 @@ public:
 		if (type == KFS_DIR)
 			filesize = 0;
 		//<!Adds the handler if the string is not empty
-	            this->optional_handler = handler_key;
+	            this->optionalHandler = handler_key;
 	}
 
 	MetaFattr(FileType t, fid_t id, struct timeval mt,
@@ -174,7 +174,7 @@ public:
 		if (type == KFS_DIR)
 			filesize = 0;
 		//<!Adds the handler if the string is not empty
-	            this->optional_handler = handler_key;
+	            this->optionalHandler = handler_key;
 		}
 
 	MetaFattr(): Meta(KFS_FATTR, 0), type(KFS_NONE) { }

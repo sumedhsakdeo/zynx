@@ -143,7 +143,7 @@ struct CreateOp : public KfsOp {
     int numReplicas; // desired degree of replication
     bool exclusive; // O_EXCL flag
     std::string optionalHandler;   // optional handler
-    CreateOp(kfsSeq_t s, kfsFileId_t p, const char *f, int n, bool e, const std::string& h="") :
+    CreateOp(kfsSeq_t s, kfsFileId_t p, const char *f, int n, bool e, const std::string h="") :
         KfsOp(CMD_CREATE, s), parentFid(p), filename(f),
         numReplicas(n), exclusive(e), optionalHandler(h)
     {

@@ -215,10 +215,10 @@ struct MetaCreate: public MetaRequest {
 	fid_t fid;	//!< file ID of new file
 	int16_t numReplicas; //!< desired degree of replication
 	bool exclusive;  //!< model the O_EXCL flag
-	string optional_handler;
+	string optionalHandler;
 	MetaCreate(seq_t s, int pv, fid_t d, string n, int16_t r, bool e,string handler):
 		MetaRequest(META_CREATE, s, pv, true), dir(d),
-		name(n), numReplicas(r), exclusive(e), optional_handler(handler) { }
+		name(n), numReplicas(r), exclusive(e), optionalHandler(handler) { }
         virtual void handle();
 	virtual int log(ofstream &file) const;
 	virtual void response(ostream &os);

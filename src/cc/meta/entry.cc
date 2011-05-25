@@ -213,13 +213,13 @@ KFS::pop_time(struct timeval &tv, const string tag, deque <string> &c, bool ok)
  */
 
 bool
-KFS::pop_handler(string& optional_handler,const string tag, deque <string> &c, bool ok)
+KFS::pop_handler(string& optionalHandler,const string tag, deque <string> &c, bool ok)
 {
 	if(!ok || c.size() < 2|| c.front() != tag)
 		return false;
 	
 	c.pop_front();	
-	optional_handler = c.front();
+	optionalHandler = c.front();
 	c.pop_front();
 	return true;
 }
