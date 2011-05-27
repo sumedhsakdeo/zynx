@@ -312,6 +312,7 @@ static inline string FattrReply(const MetaFattr *fa)
 	os << "Chunk-count: " << toString(fa->chunkcount) << "\r\n";
 	os << "File-size: " << toString(fa->filesize) << "\r\n";
 	os << "Replication: " << toString(fa->numReplicas) << "\r\n";
+	os << "OptionalHandler: " << fa->optionalHandler << "\r\n";
 	sendtime(os, "M-Time:", fa->mtime, "\r\n");
 	sendtime(os, "C-Time:", fa->ctime, "\r\n");
 	sendtime(os, "CR-Time:", fa->crtime, "\r\n");

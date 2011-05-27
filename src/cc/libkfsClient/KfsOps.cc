@@ -195,7 +195,7 @@ LookupOp::Request(ostream &os)
     os << "Version: " << KFS_VERSION_STR << "\r\n";
     os << "Client-Protocol-Version: " << KFS_CLIENT_PROTO_VERS << "\r\n";
     os << "Parent File-handle: " << parentFid << "\r\n";
-    os << "Filename: " << filename << "\r\n\r\n";
+    os << "Filename: " << filename << "\r\n";
 }
 
 void

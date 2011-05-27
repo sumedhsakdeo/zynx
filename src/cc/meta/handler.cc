@@ -18,31 +18,34 @@ ZincHandler::getInstance()	{
 
 
 void 
-ZincHandler:: runHandler (const std::string handler_key)  {
+ZincHandler:: runHandler (const std::string handler_key,const std::string event)  {
     
     char *input = new char[handler_key.size() + 1];
     std::copy(handler_key.begin(), handler_key.end(), input);
     input[handler_key.size()] = '\0';
     const char *app_name  = strtok (input, ":"); 
-    const char *event_name = strtok (NULL, ":");
     const char *func_name = strtok (NULL, ":");
+    const char *event_name = strtok (NULL, ":");
 
-    ZincHandler *z = ZincHandler::getInstance();
+    if(!event.compare(std::string(event_name))) {
+
+	    ZincHandler *z = ZincHandler::getInstance();
     
-    void *lib_handle = z->get_lib_handle(app_name); 
+	    void *lib_handle = z->get_lib_handle(app_name); 
     
-    char *error;
+	    char *error;
     
-    void (*fn)();
-    *(void**)(&fn) = dlsym((void*)lib_handle, event_name);
-    if ((error = dlerror()) != NULL)  
-    {
-       //  try name mangled 
-       // dlsym(lib_handle, event_name);
-       fprintf(stderr, "%s\n", error);
-       return;
+	    void (*fn)();
+	    *(void**)(&fn) = dlsym((void*)lib_handle, func_name);
+	    if ((error = dlerror()) != NULL)  
+	    {
+	       //  try name mangled 
+	       // dlsym(lib_handle, event_name);
+	       fprintf(stderr, "%s\n", error);
+	       return;
+	    }
+
+	    (*fn)(); 
     }
-
-    (*fn)(); 
 
 }

@@ -558,9 +558,9 @@ KfsClient::GetReadAheadSize(int fd) const
 }
 
 string
-KfsClient::GetOptionalHandler()
+KfsClient::GetOptionalHandler(const char* pathname)
 {
-    return mImpl->GetOptionalHandler();
+    return mImpl->GetOptionalHandler(pathname);
 }
 
 //
@@ -2225,7 +2225,7 @@ KfsClientImpl::GetReadAheadSize(int fd) const
 /// To allow clients to get Optional Handler String
 ///
 string
-KfsClientImpl::GetOptionalHandler()
+KfsClientImpl::GetOptionalHandler(const char* pathname)
 {
 	MutexLock l(&mMutex);
 
@@ -2233,7 +2233,7 @@ KfsClientImpl::GetOptionalHandler()
 
     // Non-existent
     if (!IsFile(pathname)) 
-        return -ENOENT;
+        return "";
 
     // load up the fte
     fd = LookupFileTableEntry(pathname);
@@ -2242,7 +2242,7 @@ KfsClientImpl::GetOptionalHandler()
         fd = Open(pathname, 0);
         // we got too many open files?
         if (fd < 0)
-            return fd;
+            return "";
     }
     return mFileTable[fd]->fattr.optionalHandler;
 

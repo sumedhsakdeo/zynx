@@ -43,7 +43,7 @@ class   ZincHandler    {
        }
 
        //  run handler 
-       void  runHandler (const std::string);
+       void  runHandler (const std::string handler_key, const std::string event);
 
        //   close all the handlers open
        ~ZincHandler() {
