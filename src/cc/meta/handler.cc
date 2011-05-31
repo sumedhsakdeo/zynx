@@ -2,21 +2,23 @@
 #include    <string.h>
 #include    "handler.h"
 
-const std::string zinc_handler::path = "/usr/local/";
-const std::string zinc_handler::lib_ext = ".so";
-zinc_handler* zinc_handler::handler = NULL;
+using namespace std;
 
-zinc_handler* 
-zinc_handler::getInstance()	{
+const string ZincHandler::path = "/usr/local/";
+const string ZincHandler::lib_ext = ".so";
+ZincHandler* ZincHandler::handler = NULL;
+
+ZincHandler* 
+ZincHandler::getInstance()	{
  if (handler == NULL)    {
-    handler = new zinc_handler(); 
+    handler = new ZincHandler(); 
  }
  return handler;
 }
 
 
-void zinc_handler::  
-runHandler (const std::string handler_key)  {
+void 
+ZincHandler:: runHandler (const std::string handler_key)  {
     
     char *input = new char[handler_key.size() + 1];
     std::copy(handler_key.begin(), handler_key.end(), input);
@@ -25,7 +27,7 @@ runHandler (const std::string handler_key)  {
     const char *event_name = strtok (NULL, ":");
     const char *func_name = strtok (NULL, ":");
 
-    zinc_handler *z = zinc_handler::getInstance();
+    ZincHandler *z = ZincHandler::getInstance();
     
     void *lib_handle = z->get_lib_handle(app_name); 
     
