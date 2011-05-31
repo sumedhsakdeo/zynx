@@ -160,7 +160,7 @@ public:
 		mtime = ctime = crtime;
 		if (type == KFS_DIR)
 			filesize = 0;
-        if (handler_key.empty())
+        if (!handler_key.empty())
             this->optional_handler.push_back(handler_key);
 	}
 
@@ -172,7 +172,7 @@ public:
 	{ 
 		if (type == KFS_DIR)
 			filesize = 0;
-        if (handler_key.empty())
+        if (!handler_key.empty())
             this->optional_handler.push_back(handler_key);
 	}
 

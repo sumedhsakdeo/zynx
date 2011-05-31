@@ -164,10 +164,7 @@ ByteCount	src/cc/chunk/BufferManager.h	/^    typedef int64_t ByteCount;$/;"	t	cl
 BytesConsumable	src/cc/libkfsIO/IOBuffer.h	/^    int BytesConsumable() const { return mProducer - mConsumer; }$/;"	f	class:KFS::IOBufferData
 BytesConsumable	src/cc/libkfsIO/IOBuffer.h	/^    int BytesConsumable() const$/;"	f	class:KFS::IOBuffer
 BytesConsumableLast	src/cc/libkfsIO/IOBuffer.h	/^    int BytesConsumableLast() const$/;"	f	class:KFS::IOBuffer
-CC	src/cc/qcdio/Makefile	/^CC      = gcc$/;"	m
 CC_CONFIG_H	src/cc/common/config.h	27;"	d
-CFLAGS_COMMON	src/cc/qcdio/Makefile	/^CFLAGS_COMMON = \\$/;"	m
-CFLAGS_iovperf_debug	src/cc/qcdio/Makefile	/^CFLAGS_iovperf_debug  = -Wall -g3 -O0$/;"	m
 CHECKSUM_BLOCKSIZE	src/cc/libkfsIO/Checksum.h	/^const uint32_t CHECKSUM_BLOCKSIZE = 65536;$/;"	m	namespace:KFS
 CHUNKSERVER_CHECKSUM_H	src/cc/libkfsIO/Checksum.h	27;"	d
 CHUNKSERVER_LEASECLERK_H	src/cc/chunk/LeaseClerk.h	33;"	d
@@ -189,6 +186,45 @@ CLIENT_SM_LOG_STREAM_FATAL	src/cc/chunk/ClientSM.cc	50;"	d	file:
 CLIENT_SM_LOG_STREAM_INFO	src/cc/chunk/ClientSM.cc	48;"	d	file:
 CLIENT_SM_LOG_STREAM_PREFIX	src/cc/chunk/ClientSM.cc	44;"	d	file:
 CLIENT_SM_LOG_STREAM_WARN	src/cc/chunk/ClientSM.cc	47;"	d	file:
+CMAKE_BINARY_DIR	Makefile	/^CMAKE_BINARY_DIR = \/home\/sumedh\/kfs$/;"	m
+CMAKE_BINARY_DIR	src/cc/access/Makefile	/^CMAKE_BINARY_DIR = \/home\/sumedh\/kfs$/;"	m
+CMAKE_BINARY_DIR	src/cc/chunk/Makefile	/^CMAKE_BINARY_DIR = \/home\/sumedh\/kfs$/;"	m
+CMAKE_BINARY_DIR	src/cc/common/Makefile	/^CMAKE_BINARY_DIR = \/home\/sumedh\/kfs$/;"	m
+CMAKE_BINARY_DIR	src/cc/emulator/Makefile	/^CMAKE_BINARY_DIR = \/home\/sumedh\/kfs$/;"	m
+CMAKE_BINARY_DIR	src/cc/libkfsClient/Makefile	/^CMAKE_BINARY_DIR = \/home\/sumedh\/kfs$/;"	m
+CMAKE_BINARY_DIR	src/cc/libkfsIO/Makefile	/^CMAKE_BINARY_DIR = \/home\/sumedh\/kfs$/;"	m
+CMAKE_BINARY_DIR	src/cc/meta/Makefile	/^CMAKE_BINARY_DIR = \/home\/sumedh\/kfs$/;"	m
+CMAKE_BINARY_DIR	src/cc/qcdio/Makefile	/^CMAKE_BINARY_DIR = \/home\/sumedh\/kfs$/;"	m
+CMAKE_BINARY_DIR	src/cc/rebalancer/Makefile	/^CMAKE_BINARY_DIR = \/home\/sumedh\/kfs$/;"	m
+CMAKE_BINARY_DIR	src/cc/telemetry/Makefile	/^CMAKE_BINARY_DIR = \/home\/sumedh\/kfs$/;"	m
+CMAKE_BINARY_DIR	src/cc/tests/Makefile	/^CMAKE_BINARY_DIR = \/home\/sumedh\/kfs$/;"	m
+CMAKE_BINARY_DIR	src/cc/tools/Makefile	/^CMAKE_BINARY_DIR = \/home\/sumedh\/kfs$/;"	m
+CMAKE_COMMAND	Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	src/cc/access/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	src/cc/chunk/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	src/cc/common/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	src/cc/emulator/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	src/cc/libkfsClient/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	src/cc/libkfsIO/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	src/cc/meta/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	src/cc/qcdio/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	src/cc/rebalancer/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	src/cc/telemetry/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	src/cc/tests/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	src/cc/tools/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_SOURCE_DIR	Makefile	/^CMAKE_SOURCE_DIR = \/home\/sumedh\/kfs$/;"	m
+CMAKE_SOURCE_DIR	src/cc/access/Makefile	/^CMAKE_SOURCE_DIR = \/home\/sumedh\/kfs$/;"	m
+CMAKE_SOURCE_DIR	src/cc/chunk/Makefile	/^CMAKE_SOURCE_DIR = \/home\/sumedh\/kfs$/;"	m
+CMAKE_SOURCE_DIR	src/cc/common/Makefile	/^CMAKE_SOURCE_DIR = \/home\/sumedh\/kfs$/;"	m
+CMAKE_SOURCE_DIR	src/cc/emulator/Makefile	/^CMAKE_SOURCE_DIR = \/home\/sumedh\/kfs$/;"	m
+CMAKE_SOURCE_DIR	src/cc/libkfsClient/Makefile	/^CMAKE_SOURCE_DIR = \/home\/sumedh\/kfs$/;"	m
+CMAKE_SOURCE_DIR	src/cc/libkfsIO/Makefile	/^CMAKE_SOURCE_DIR = \/home\/sumedh\/kfs$/;"	m
+CMAKE_SOURCE_DIR	src/cc/meta/Makefile	/^CMAKE_SOURCE_DIR = \/home\/sumedh\/kfs$/;"	m
+CMAKE_SOURCE_DIR	src/cc/qcdio/Makefile	/^CMAKE_SOURCE_DIR = \/home\/sumedh\/kfs$/;"	m
+CMAKE_SOURCE_DIR	src/cc/rebalancer/Makefile	/^CMAKE_SOURCE_DIR = \/home\/sumedh\/kfs$/;"	m
+CMAKE_SOURCE_DIR	src/cc/telemetry/Makefile	/^CMAKE_SOURCE_DIR = \/home\/sumedh\/kfs$/;"	m
+CMAKE_SOURCE_DIR	src/cc/tests/Makefile	/^CMAKE_SOURCE_DIR = \/home\/sumedh\/kfs$/;"	m
+CMAKE_SOURCE_DIR	src/cc/tools/Makefile	/^CMAKE_SOURCE_DIR = \/home\/sumedh\/kfs$/;"	m
 CMD_ALLOCATE	src/cc/libkfsClient/KfsOps.h	/^    CMD_ALLOCATE,$/;"	e	enum:KFS::KfsOp_t
 CMD_ALLOC_CHUNK	src/cc/chunk/KfsOps.h	/^    CMD_ALLOC_CHUNK,$/;"	e	enum:KFS::KfsOp_t
 CMD_BEGIN_MAKE_CHUNK_STABLE	src/cc/chunk/KfsOps.h	/^    CMD_BEGIN_MAKE_CHUNK_STABLE,$/;"	e	enum:KFS::KfsOp_t
@@ -287,8 +323,79 @@ COMMON_KFSTYPES_H	src/cc/common/kfstypes.h	28;"	d
 COMMON_KFSVERSION_H	src/cc/common/Version.h	27;"	d
 COMMON_LOG_H	src/cc/common/log.h	28;"	d
 COMMON_PROPERTIES_H	src/cc/common/properties.h	28;"	d
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	10;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	13;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	16;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	19;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	22;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	25;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	29;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	31;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	33;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	37;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	40;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	43;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	48;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	59;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	62;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	68;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	71;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	74;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	12;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	15;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	18;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	21;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	24;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	27;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	31;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	33;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	35;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	39;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	42;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	45;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	50;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	53;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	59;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	62;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	65;"	d	file:
+COMPILER_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	9;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	10;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	13;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	16;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	19;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	22;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	25;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	29;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	31;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	33;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	37;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	40;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	43;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	48;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	59;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	62;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	68;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	71;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	74;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	12;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	15;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	18;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	21;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	24;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	27;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	31;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	33;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	35;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	39;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	42;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	45;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	50;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	53;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	59;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	62;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	65;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	9;"	d	file:
 CONCURRENT_WRITES_PER_NODE_WATERMARK	src/cc/meta/LayoutManager.cc	/^const uint32_t CONCURRENT_WRITES_PER_NODE_WATERMARK = 10;$/;"	v
-CP	src/cc/qcdio/Makefile	/^CP      = cp$/;"	m
 CRCandidateSet	src/cc/meta/LayoutManager.h	/^	typedef ChunkIdSet CRCandidateSet;$/;"	t	namespace:KFS
 CRCandidateSetIter	src/cc/meta/LayoutManager.h	/^	typedef CRCandidateSet::iterator CRCandidateSetIter;$/;"	t	namespace:KFS
 CSCounters	src/cc/meta/LayoutManager.h	/^        > CSCounters;$/;"	t	namespace:KFS
@@ -296,9 +403,6 @@ CSMap	src/cc/meta/LayoutManager.h	/^		CSMap() : mMap(), mIt(mMap.end()), mKey(),
 CSMap	src/cc/meta/LayoutManager.h	/^	class CSMap {$/;"	c	namespace:KFS
 CSMapConstIter	src/cc/meta/LayoutManager.h	/^	typedef CSMap::const_iterator CSMapConstIter;$/;"	t	namespace:KFS
 CSMapIter	src/cc/meta/LayoutManager.h	/^	typedef CSMap::iterator CSMapIter;$/;"	t	namespace:KFS
-CXXFLAGS_COMMON	src/cc/qcdio/Makefile	/^CXXFLAGS_COMMON = ${CFLAGS_COMMON}$/;"	m
-CXXFLAGS_unittest	src/cc/qcdio/Makefile	/^CXXFLAGS_unittest = -Wall -pthread$/;"	m
-CXXFLAGS_unittest_debug	src/cc/qcdio/Makefile	/^CXXFLAGS_unittest_debug = ${CXXFLAGS_unittest} -g3 -O0$/;"	m
 CanAppend	src/cc/libkfsClient/WriteAppender.cc	/^    bool CanAppend()$/;"	f	class:KFS::WriteAppender::Impl	file:
 CanBeChunkMaster	src/cc/meta/ChunkServer.h	/^		bool CanBeChunkMaster() const {$/;"	f	class:KFS::ChunkServer
 CanDoLowOnBuffersFlush	src/cc/chunk/AtomicRecordAppender.cc	/^    bool CanDoLowOnBuffersFlush() const$/;"	f	class:KFS::AtomicRecordAppender
@@ -647,7 +751,6 @@ Ctl	src/cc/qcdio/qcfdpoll.cpp	/^    int Ctl(Fd inFd, int inOpType, bool inRemove
 DEFAULT_BUF_SIZE	src/java/org/kosmix/kosmosfs/access/KfsInputChannel.java	/^    private static final int DEFAULT_BUF_SIZE = 1 << 20;$/;"	f	class:KfsInputChannel	file:
 DEFAULT_BUF_SIZE	src/java/org/kosmix/kosmosfs/access/KfsOutputChannel.java	/^    private static final int DEFAULT_BUF_SIZE = 1 << 20;$/;"	f	class:KfsOutputChannel	file:
 DEFAULT_NUM_RETRIES_PER_OP	src/cc/libkfsClient/KfsClientInt.h	/^const int DEFAULT_NUM_RETRIES_PER_OP = 6;$/;"	m	namespace:KFS
-DEPEND	src/cc/qcdio/Makefile	/^DEPEND  := ${OBJ:.o=.d}$/;"	m
 DailyRollingFileAppender	src/cc/common/DailyRollingFileAppender.cc	/^DailyRollingFileAppender::DailyRollingFileAppender(const string &name, const string &fileName,$/;"	f	class:log4cpp::DailyRollingFileAppender
 DailyRollingFileAppender	src/cc/common/DailyRollingFileAppender.h	/^    class LOG4CPP_EXPORT DailyRollingFileAppender : public LayoutAppender {$/;"	c	namespace:log4cpp
 DeallocContentBuf	src/cc/libkfsClient/KfsOps.h	/^    void DeallocContentBuf() {$/;"	f	struct:KFS::KfsOp
@@ -1459,12 +1562,12 @@ HibernatingServerInfo_t	src/cc/meta/LayoutManager.h	/^	struct HibernatingServerI
 HostingChunk	src/cc/emulator/ChunkServerEmulator.h	/^        void HostingChunk(kfsChunkId_t cid, size_t chunksize) {$/;"	f	class:KFS::ChunkServerEmulator
 Hsieh_hash_fcn	src/cc/common/hsieh_hash.h	/^    struct Hsieh_hash_fcn {$/;"	s	namespace:KFS
 IAcceptorOwner	src/cc/libkfsIO/Acceptor.h	/^class IAcceptorOwner {$/;"	c	namespace:KFS
+ID_VOID_MAIN	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
+ID_VOID_MAIN	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
 IFSImpl	kfs-hadoop/0.15x/src/java/org/apache/hadoop/fs/kfs/IFSImpl.java	/^interface IFSImpl {$/;"	i
 IFSImpl	kfs-hadoop/0.16x/src/java/org/apache/hadoop/fs/kfs/IFSImpl.java	/^interface IFSImpl {$/;"	i
 IFSImpl	kfs-hadoop/0.17x/src/java/org/apache/hadoop/fs/kfs/IFSImpl.java	/^interface IFSImpl {$/;"	i
 IFSImpl	kfs-hadoop/0.18x/src/core/org/apache/hadoop/fs/kfs/IFSImpl.java	/^interface IFSImpl {$/;"	i
-INCLUDE	src/cc/qcdio/Makefile	/^INCLUDE := ${INCLUDE_${PROGRAM}}$/;"	m
-INCLUDE_unittest	src/cc/qcdio/Makefile	/^INCLUDE_unittest  =$/;"	m
 IOBuffer	src/cc/libkfsIO/IOBuffer.cc	/^IOBuffer::IOBuffer()$/;"	f	class:IOBuffer
 IOBuffer	src/cc/libkfsIO/IOBuffer.h	/^class IOBuffer$/;"	c	namespace:KFS
 IOBufferAllocator	src/cc/libkfsIO/IOBuffer.h	/^        IOBufferAllocator()$/;"	f	class:KFS::libkfsio::IOBufferAllocator
@@ -1852,6 +1955,7 @@ KFSOutputStream	kfs-hadoop/0.17x/src/java/org/apache/hadoop/fs/kfs/KFSOutputStre
 KFSOutputStream	kfs-hadoop/0.18x/src/core/org/apache/hadoop/fs/kfs/KFSOutputStream.java	/^    public KFSOutputStream(KfsAccess kfsAccess, String path, short replication) {$/;"	m	class:KFSOutputStream
 KFSOutputStream	kfs-hadoop/0.18x/src/core/org/apache/hadoop/fs/kfs/KFSOutputStream.java	/^class KFSOutputStream extends OutputStream {$/;"	c
 KFS_BASE_H	src/cc/meta/base.h	25;"	d
+KFS_BUILD_VERSION_STRING	src/cc/common/Version.cc	/^const std::string KFS::KFS_BUILD_VERSION_STRING="perforce1:1666\/trunk@1000";$/;"	m	class:KFS	file:
 KFS_CHECKPOINT_H	src/cc/meta/checkpoint.h	26;"	d
 KFS_CHUNKINFO	src/cc/meta/kfstypes.h	/^	KFS_CHUNKINFO,		\/\/!< chunk information$/;"	e	enum:KFS::MetaType
 KFS_CHUNK_HEADER_SIZE	src/cc/chunk/ChunkManager.h	/^const size_t KFS_CHUNK_HEADER_SIZE = 16384;$/;"	m	namespace:KFS
@@ -1896,6 +2000,7 @@ KFS_REPLAY_H	src/cc/meta/replay.h	25;"	d
 KFS_REQUEST_H	src/cc/meta/request.h	31;"	d
 KFS_RESTORE_H	src/cc/meta/restore.h	25;"	d
 KFS_SENTINEL	src/cc/meta/kfstypes.h	/^	KFS_SENTINEL = 99999	\/\/!< internal use, must be largest$/;"	e	enum:KFS::MetaType
+KFS_SOURCE_REVISION_STRING	src/cc/common/Version.cc	/^const std::string KFS::KFS_SOURCE_REVISION_STRING="100";$/;"	m	class:KFS	file:
 KFS_STARTUP_H	src/cc/meta/startup.h	26;"	d
 KFS_THREAD_H	src/cc/meta/thread.h	26;"	d
 KFS_TYPES_H	src/cc/meta/kfstypes.h	26;"	d
@@ -1966,8 +2071,6 @@ KosmosFileSystem	kfs-hadoop/0.17x/src/java/org/apache/hadoop/fs/kfs/KosmosFileSy
 KosmosFileSystem	kfs-hadoop/0.18x/src/core/org/apache/hadoop/fs/kfs/KosmosFileSystem.java	/^    KosmosFileSystem(IFSImpl fsimpl) {$/;"	m	class:KosmosFileSystem
 KosmosFileSystem	kfs-hadoop/0.18x/src/core/org/apache/hadoop/fs/kfs/KosmosFileSystem.java	/^    public KosmosFileSystem() {$/;"	m	class:KosmosFileSystem
 KosmosFileSystem	kfs-hadoop/0.18x/src/core/org/apache/hadoop/fs/kfs/KosmosFileSystem.java	/^public class KosmosFileSystem extends FileSystem {$/;"	c
-LDFLAGS_iovperf_debug	src/cc/qcdio/Makefile	/^LDFLAGS_iovperf_debug = -Wall -g3$/;"	m
-LDFLAGS_unittest_debug	src/cc/qcdio/Makefile	/^LDFLAGS_unittest_debug = -g3$/;"	m
 LEASE_EXPIRE_WINDOW_MSECS	src/cc/chunk/LeaseClerk.h	/^    static const int LEASE_EXPIRE_WINDOW_MSECS = LEASE_EXPIRE_WINDOW_SECS * 1000;$/;"	m	class:KFS::LeaseClerk
 LEASE_EXPIRE_WINDOW_SECS	src/cc/chunk/LeaseClerk.h	/^    static const int LEASE_EXPIRE_WINDOW_SECS = 30;$/;"	m	class:KFS::LeaseClerk
 LEASE_INTERVAL_SECS	src/cc/common/kfstypes.h	/^const int LEASE_INTERVAL_SECS = 300;$/;"	m	namespace:KFS
@@ -1987,8 +2090,6 @@ LIBKFSIO_BUFFEREDSOCKET_H	src/cc/libkfsIO/BufferedSocket.h	31;"	d
 LIBKFSIO_COUNTER_H	src/cc/libkfsIO/Counter.h	29;"	d
 LIBKFSIO_GLOBALS_H	src/cc/libkfsIO/Globals.h	28;"	d
 LIBKFSIO_NETKICKER_H	src/cc/libkfsIO/NetKicker.h	35;"	d
-LIBS	src/cc/qcdio/Makefile	/^LIBS    := ${LIBS_${PROGRAM}}$/;"	m
-LIBS_unittest	src/cc/qcdio/Makefile	/^LIBS_unittest = \\$/;"	m
 LOG_ROLLOVER_MAXSEC	src/cc/meta/logger.h	/^const unsigned int LOG_ROLLOVER_MAXSEC = 600;	\/\/!< max. seconds between CP's\/log rollover$/;"	m	namespace:KFS
 LayoutDone	src/cc/meta/request.cc	/^MetaAllocate::LayoutDone()$/;"	f	class:KFS::MetaAllocate
 LayoutEmulator	src/cc/emulator/LayoutEmulator.h	/^        LayoutEmulator() : mPercentVariationFromMean(0.1), mNumBlksRebalanced(0) {$/;"	f	class:KFS::LayoutEmulator
@@ -2209,7 +2310,6 @@ MIN_FILE_SIZE	src/cc/tests/KfsSeekWrite_main.cc	38;"	d	file:
 MIN_FILE_SIZE	src/cc/tests/KfsTrunc_main.cc	34;"	d	file:
 MIN_FILE_SIZE	src/cc/tests/KfsWriter_main.cc	35;"	d	file:
 MIN_SERVER_SPACE_UTIL_THRESHOLD	src/cc/meta/LayoutManager.h	/^	const float MIN_SERVER_SPACE_UTIL_THRESHOLD = 0.3;$/;"	m	namespace:KFS
-MKDIR	src/cc/qcdio/Makefile	/^MKDIR   = mkdir$/;"	m
 MOD_ADLER	src/cc/libkfsIO/Checksum.h	/^const uint32_t MOD_ADLER = 65521;$/;"	m	namespace:KFS
 MSG_LEN	src/cc/telemetry/packet.h	/^    static const int MSG_LEN = 32;$/;"	m	namespace:KFS
 MainLoop	src/cc/chunk/ChunkServer.cc	/^ChunkServer::MainLoop(int clientAcceptPort, const string & serverHostname)$/;"	f	class:ChunkServer
@@ -2325,7 +2425,7 @@ MetaDumpChunkToServerMap	src/cc/meta/request.h	/^struct MetaDumpChunkToServerMap
 MetaExecuteRebalancePlan	src/cc/meta/request.h	/^	MetaExecuteRebalancePlan(seq_t s, int pv, const std::string &p) :$/;"	f	struct:KFS::MetaExecuteRebalancePlan
 MetaExecuteRebalancePlan	src/cc/meta/request.h	/^struct MetaExecuteRebalancePlan : public MetaRequest {$/;"	s	namespace:KFS
 MetaFattr	src/cc/meta/meta.h	/^	MetaFattr(): Meta(KFS_FATTR, 0), type(KFS_NONE) { }$/;"	f	class:KFS::MetaFattr
-MetaFattr	src/cc/meta/meta.h	/^	MetaFattr(FileType t, fid_t id, int16_t n):$/;"	f	class:KFS::MetaFattr
+MetaFattr	src/cc/meta/meta.h	/^	MetaFattr(FileType t, fid_t id, int16_t n, const std::string& handler_key = ""):$/;"	f	class:KFS::MetaFattr
 MetaFattr	src/cc/meta/meta.h	/^	MetaFattr(FileType t, fid_t id, struct timeval mt,$/;"	f	class:KFS::MetaFattr
 MetaFattr	src/cc/meta/meta.h	/^class MetaFattr: public Meta {$/;"	c	namespace:KFS
 MetaFsck	src/cc/meta/request.h	/^	MetaFsck(seq_t s, int pv):$/;"	f	struct:KFS::MetaFsck
@@ -2502,7 +2602,6 @@ NowMs	src/cc/libkfsIO/ITimeout.h	/^    static int64_t NowMs() {$/;"	f	class:KFS:
 NullAllocator	src/cc/libkfsClient/KfsAsyncRW.h	/^        NullAllocator() : bufsz(0) { }$/;"	f	class:KFS::NullAllocator
 NullAllocator	src/cc/libkfsClient/KfsAsyncRW.h	/^    class NullAllocator : public libkfsio::IOBufferAllocator$/;"	c	namespace:KFS
 NumDiskIOOutstanding	src/cc/libkfsIO/DiskManager.h	/^    int NumDiskIOOutstanding() {$/;"	f	class:KFS::DiskManager
-OBJ	src/cc/qcdio/Makefile	/^OBJ     := $(addsuffix .o, $(basename ${SRC_${PROGRAM}}))$/;"	m
 OPNAME_LEN	src/cc/telemetry/packet.h	/^    static const int OPNAME_LEN = 32;$/;"	m	namespace:KFS
 OP_NONE	src/cc/libkfsIO/DiskEvent.h	/^    OP_NONE,$/;"	e	enum:KFS::DiskEventOp_t
 OP_READ	src/cc/libkfsIO/DiskEvent.h	/^    OP_READ,$/;"	e	enum:KFS::DiskEventOp_t
@@ -2510,7 +2609,6 @@ OP_REQUEST	src/cc/chunk/KfsOps.h	/^    OP_REQUEST,$/;"	e	enum:KFS::OpType_t
 OP_RESPONSE	src/cc/chunk/KfsOps.h	/^    OP_RESPONSE$/;"	e	enum:KFS::OpType_t
 OP_SYNC	src/cc/libkfsIO/DiskEvent.h	/^    OP_SYNC$/;"	e	enum:KFS::DiskEventOp_t
 OP_WRITE	src/cc/libkfsIO/DiskEvent.h	/^    OP_WRITE,$/;"	e	enum:KFS::DiskEventOp_t
-OS_NAME	src/cc/qcdio/Makefile	/^    OS_NAME := $(shell uname |  tr -s '[:lower:]' '[:upper:]')$/;"	m
 OStream	src/cc/libkfsIO/IOBuffer.h	/^    OStream()$/;"	f	class:KFS::IOBuffer::OStream
 OStream	src/cc/libkfsIO/IOBuffer.h	/^class IOBuffer::OStream :$/;"	c	class:KFS::IOBuffer
 O_DIRECT	src/cc/qcdio/iovperf.c	57;"	d	file:
@@ -2586,6 +2684,110 @@ OutputIterator	src/cc/qcdio/qcdiskqueue.h	/^    typedef QCIoBufferPool::OutputIt
 OutputIterator	src/cc/qcdio/qciobufferpool.h	/^        OutputIterator()$/;"	f	class:QCIoBufferPool::OutputIterator
 OutputIterator	src/cc/qcdio/qciobufferpool.h	/^    class OutputIterator$/;"	c	class:QCIoBufferPool
 Owner	src/cc/libkfsClient/KfsProtocolWorker.cc	/^        typedef KfsProtocolWorker::Impl Owner;$/;"	t	class:KFS::KfsProtocolWorker::Impl::Appender	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	101;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	104;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	107;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	110;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	113;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	116;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	119;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	122;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	128;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	131;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	134;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	137;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	140;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	143;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	146;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	149;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	152;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	155;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	158;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	161;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	164;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	86;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	89;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	92;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	95;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	98;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	101;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	104;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	107;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	110;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	113;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	119;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	122;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	125;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	128;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	131;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	134;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	137;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	140;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	143;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	146;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	149;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	152;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	155;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	77;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	80;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	83;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	86;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	89;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	92;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	95;"	d	file:
+PLATFORM_ID	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	98;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	101;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	104;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	107;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	110;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	113;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	116;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	119;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	122;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	128;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	131;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	134;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	137;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	140;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	143;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	146;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	149;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	152;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	155;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	158;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	161;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	164;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	86;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	89;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	92;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	95;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	98;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	101;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	104;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	107;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	110;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	113;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	119;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	122;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	125;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	128;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	131;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	134;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	137;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	140;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	143;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	146;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	149;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	152;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	155;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	77;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	80;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	83;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	86;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	89;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	92;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	95;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	98;"	d	file:
 PORT	webui/kfsstatus.py	/^    PORT = config.getint('webserver', 'webServer.port')$/;"	v
 PORT	webui/kfsstatus.py	/^    PORT=20001$/;"	v
 Parse	src/cc/emulator/LayoutEmulator.cc	/^void LayoutEmulator::Parse(const char *line, bool addChunksToReplicationChecker)$/;"	f	class:LayoutEmulator
@@ -2785,7 +2987,19 @@ REBALANCER_REBALANCER_H	src/cc/rebalancer/rebalancer.h	13;"	d
 REPLICATION_CHECK_INTERVAL_MSECS	src/cc/meta/ChunkReplicator.h	/^	static const int REPLICATION_CHECK_INTERVAL_MSECS = $/;"	m	class:KFS::ChunkReplicator
 REPLICATION_CHECK_INTERVAL_SECS	src/cc/meta/ChunkReplicator.h	/^	static const int REPLICATION_CHECK_INTERVAL_SECS = 60;$/;"	m	class:KFS::ChunkReplicator
 RETRY_DELAY_SECS	src/cc/libkfsClient/KfsClientInt.h	/^const int RETRY_DELAY_SECS = 5;$/;"	m	namespace:KFS
-RM	src/cc/qcdio/Makefile	/^RM      = rm -f$/;"	m
+RM	Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RM	src/cc/access/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RM	src/cc/chunk/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RM	src/cc/common/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RM	src/cc/emulator/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RM	src/cc/libkfsClient/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RM	src/cc/libkfsIO/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RM	src/cc/meta/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RM	src/cc/qcdio/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RM	src/cc/rebalancer/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RM	src/cc/telemetry/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RM	src/cc/tests/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RM	src/cc/tools/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
 ROOTFID	src/cc/common/kfstypes.h	/^const fid_t ROOTFID = 2;        \/\/!< special fid for "\/$/;"	m	namespace:KFS
 RackAwareReplicationVerifier	src/cc/emulator/LayoutEmulator.cc	/^    RackAwareReplicationVerifier(int &s, int &u, int &m, int &z,$/;"	f	class:RackAwareReplicationVerifier
 RackAwareReplicationVerifier	src/cc/emulator/LayoutEmulator.cc	/^class RackAwareReplicationVerifier {$/;"	c	file:
@@ -3138,9 +3352,33 @@ RunTimers	src/cc/common/BufferedLogWriter.cc	/^    void RunTimers($/;"	f	class:K
 Runner	src/cc/qcdio/qcthread.cpp	/^QCThread::Runner($/;"	f	class:QCThread
 SEPARATOR	src/cc/meta/entry.h	/^	static const char SEPARATOR = '\/';$/;"	m	class:KFS::DiskEntry
 SET_HANDLER	src/cc/libkfsIO/KfsCallbackObj.h	/^void SET_HANDLER( T* pobj, typename ObjectMethod<T>::MethodPtr meth )$/;"	f	namespace:KFS
+SHELL	Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	src/cc/access/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	src/cc/chunk/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	src/cc/common/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	src/cc/emulator/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	src/cc/libkfsClient/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	src/cc/libkfsIO/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	src/cc/meta/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	src/cc/qcdio/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	src/cc/rebalancer/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	src/cc/telemetry/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	src/cc/tests/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	src/cc/tools/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SORT_COLUMN_INDEX	webui/files/sorttable/sorttable.js	/^var SORT_COLUMN_INDEX;$/;"	v
-SRC_iovperf	src/cc/qcdio/Makefile	/^SRC_iovperf = iovperf.c$/;"	m
-SRC_unittest	src/cc/qcdio/Makefile	/^SRC_unittest = \\$/;"	m
+SUFFIXES	Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	src/cc/access/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	src/cc/chunk/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	src/cc/common/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	src/cc/emulator/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	src/cc/libkfsClient/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	src/cc/libkfsIO/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	src/cc/meta/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	src/cc/qcdio/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	src/cc/rebalancer/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	src/cc/telemetry/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	src/cc/tests/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	src/cc/tools/Makefile	/^SUFFIXES =$/;"	m
 ScavengePendingWrites	src/cc/chunk/ChunkManager.cc	/^ChunkManager::ScavengePendingWrites(time_t now)$/;"	f	class:KFS::ChunkManager
 Schedule	src/cc/libkfsIO/EventManager.cc	/^void EventManager::Schedule(EventPtr &event, int afterMs)$/;"	f	class:EventManager
 ScheduleChunkServersRestart	src/cc/meta/LayoutManager.cc	/^void LayoutManager::ScheduleChunkServersRestart()$/;"	f	class:LayoutManager
@@ -3562,7 +3800,6 @@ THIS_FILE	src/cc/common/log.h	67;"	d
 TOOLS_KFSCOMMON_H	src/cc/tools/KfsToolsCommon.h	25;"	d
 TOOLS_KFSSHELL_H	src/cc/tools/KfsShell.h	29;"	d
 TOOLS_MONUTILS_H	src/cc/tools/MonUtils.h	27;"	d
-TO_CLEAN	src/cc/qcdio/Makefile	/^TO_CLEAN = \\$/;"	m
 TcpSocket	src/cc/libkfsIO/TcpSocket.h	/^    TcpSocket() {$/;"	f	class:KFS::TcpSocket
 TcpSocket	src/cc/libkfsIO/TcpSocket.h	/^    TcpSocket(int fd) {$/;"	f	class:KFS::TcpSocket
 TcpSocket	src/cc/libkfsIO/TcpSocket.h	/^class TcpSocket {$/;"	c	namespace:KFS
@@ -3825,6 +4062,7 @@ _DISKIO_H	src/cc/chunk/DiskIo.h	26;"	d
 _FILE_OFFSET_BITS	src/cc/fuse/kfs_fuse_main.cc	28;"	d	file:
 _FILE_OFFSET_BITS	src/cc/qcdio/iovperf.c	35;"	d	file:
 _GNU_SOURCE	src/cc/qcdio/iovperf.c	38;"	d	file:
+_KFS_ZINC_HANDLER_H_	src/cc/meta/handler.h	2;"	d
 _LARGEFILE64_SOURCE	src/cc/qcdio/iovperf.c	32;"	d	file:
 _LARGEFILE_SOURCE	src/cc/qcdio/iovperf.c	29;"	d	file:
 _LIBIO_ACCEPTOR_H	src/cc/libkfsIO/Acceptor.h	27;"	d
@@ -4874,6 +5112,7 @@ getFiles	scripts.solaris/kfssetup.py	/^def getFiles(buildDir, webuidir):$/;"	f
 getFiles	scripts/kfssetup.py	/^def getFiles(buildDir, webuidir):$/;"	f
 getFsckInfo	src/cc/meta/kfsfsck_main.cc	/^void getFsckInfo(string metahost, int metaport, $/;"	f
 getHostPort	src/cc/tests/KfsRW_main.cc	/^void getHostPort(const string &hp, string &host, int &port)$/;"	f
+getInstance	src/cc/meta/handler.cc	/^zinc_handler::getInstance()	{$/;"	f	class:zinc_handler
 getInt	src/cc/tools/KfsToolsCommon.cc	/^KFS::tools::getInt(const string & fromString, int &toInt)$/;"	f	class:KFS::tools
 getIoBufferSize	src/java/org/kosmix/kosmosfs/access/KfsAccess.java	/^    long getIoBufferSize(int fd);$/;"	m	class:KfsAccess	file:
 getKfsClientFactory	src/cc/libkfsClient/KfsClient.cc	/^KFS::getKfsClientFactory()$/;"	f	class:KFS
@@ -4951,6 +5190,7 @@ getWorkingDirectory	kfs-hadoop/0.15x/src/java/org/apache/hadoop/fs/kfs/KosmosFil
 getWorkingDirectory	kfs-hadoop/0.16x/src/java/org/apache/hadoop/fs/kfs/KosmosFileSystem.java	/^    public Path getWorkingDirectory() {$/;"	m	class:KosmosFileSystem
 getWorkingDirectory	kfs-hadoop/0.17x/src/java/org/apache/hadoop/fs/kfs/KosmosFileSystem.java	/^    public Path getWorkingDirectory() {$/;"	m	class:KosmosFileSystem
 getWorkingDirectory	kfs-hadoop/0.18x/src/core/org/apache/hadoop/fs/kfs/KosmosFileSystem.java	/^    public Path getWorkingDirectory() {$/;"	m	class:KosmosFileSystem
+get_lib_handle	src/cc/meta/handler.h	/^       char* get_lib_handle(const std::string app)  {$/;"	f	class:zinc_handler
 get_optional_param_int	src/python/flogger/flogger.py	/^def get_optional_param_int(name):$/;"	f
 get_optional_param_int	src/python/rw/rw.py	/^def get_optional_param_int(name):$/;"	f
 get_param_int	src/python/flogger/flogger.py	/^def get_param_int(name):$/;"	f
@@ -5050,6 +5290,9 @@ handleReply	src/cc/meta/request.h	/^	virtual void handleReply(const Properties& 
 handleReply	src/cc/meta/request.h	/^        virtual void handleReply(const Properties& prop) {}$/;"	f	struct:KFS::MetaChunkRequest
 handleRm	src/cc/tools/KfsRm.cc	/^KFS::tools::handleRm(const vector<string> &args)$/;"	f	class:KFS::tools
 handleRmdir	src/cc/tools/KfsRmdir.cc	/^KFS::tools::handleRmdir(const vector<string> &args)$/;"	f	class:KFS::tools
+handler	src/cc/meta/handler.cc	/^zinc_handler* zinc_handler::handler = NULL;$/;"	m	class:zinc_handler	file:
+handler	src/cc/meta/handler.h	/^       static zinc_handler             *handler;$/;"	m	class:zinc_handler
+handler_map	src/cc/meta/handler.h	/^       std::map<std::string, char*>   handler_map;$/;"	m	class:zinc_handler
 handlers	src/cc/tools/kfsshell_main.cc	/^CmdHandlers handlers;$/;"	v
 hasChecksum	src/cc/chunk/KfsOps.h	/^    bool         hasChecksum;$/;"	m	struct:KFS::MakeChunkStableOp
 hasChecksum	src/cc/chunk/KfsOps.h	/^    bool        hasChecksum;$/;"	m	struct:KFS::LeaseRelinquishOp
@@ -5081,6 +5324,14 @@ inQ	src/cc/libkfsClient/KfsAsyncRW.h	/^        bool        inQ;$/;"	m	struct:KFS
 include_dirs	src/cc/access/kfs_setup.py	/^		include_dirs = ['\/home\/srao\/p4trees\/kfssort\/kosmosfs\/src\/cc\/', '\/usr\/local\/include\/boost-1_37\/'],$/;"	v
 incp	src/cc/meta/logger.h	/^	seq_t incp;		\/\/!< highest request in a checkpoint$/;"	m	class:KFS::Logger
 index	src/cc/meta/kfstree.h	/^	int index() const { return pos; }$/;"	f	class:KFS::LeafIter
+info_compiler	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_compiler	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_compiler	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_compiler	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_platform	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+info_platform	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+info_platform	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+info_platform	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
 initF	src/java/org/kosmix/kosmosfs/access/KfsAccess.java	/^    long initF(String configFn);$/;"	m	class:KfsAccess	file:
 initS	src/java/org/kosmix/kosmosfs/access/KfsAccess.java	/^    long initS(String metaServerHost, int metaServerPort);$/;"	m	class:KfsAccess	file:
 init_map	src/cc/meta/replay.cc	/^init_map(DiskEntry &e)$/;"	f	file:
@@ -5426,6 +5677,8 @@ leftNeighbor	src/cc/meta/kfstree.h	/^	Node *leftNeighbor(int pos)$/;"	f	class:KF
 legalname	src/cc/meta/kfsops.cc	/^legalname(const string name)$/;"	f	file:
 length	src/cc/libkfsClient/KfsAsyncRW.h	/^        size_t      length;  \/\/ # of bytes to be read\/written$/;"	m	struct:KFS::AsyncReq
 length	src/cc/libkfsClient/KfsClientInt.h	/^    size_t length;	\/\/ length of valid data$/;"	m	struct:KFS::ChunkBuffer
+lib_ext	src/cc/meta/handler.cc	/^const std::string zinc_handler::lib_ext = ".so";$/;"	m	class:zinc_handler	file:
+lib_ext	src/cc/meta/handler.h	/^       static const std::string         lib_ext;$/;"	m	class:zinc_handler
 libkfsio	src/cc/libkfsIO/Globals.cc	/^namespace libkfsio$/;"	n	namespace:KFS	file:
 libkfsio	src/cc/libkfsIO/Globals.h	/^    namespace libkfsio$/;"	n	namespace:KFS
 libkfsio	src/cc/libkfsIO/IOBuffer.h	/^namespace libkfsio$/;"	n	namespace:KFS
@@ -6546,6 +6799,12 @@ machinesFile	scripts.solaris/kfsfsck.py	/^            machinesFile = a$/;"	v
 machinesFile	scripts.solaris/kfsfsck.py	/^    machinesFile = ""$/;"	v
 machinesFile	scripts/kfsfsck.py	/^            machinesFile = a$/;"	v
 machinesFile	scripts/kfsfsck.py	/^    machinesFile = ""$/;"	v
+main	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^int main(int argc, char* argv[])$/;"	f
+main	CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f
+main	CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^int main(int argc, char* argv[])$/;"	f
+main	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f
+main	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f
 main	examples/KfsSample.java	/^    public static void main(String args[]) {$/;"	m	class:KfsSample
 main	examples/KfsSample_main.cc	/^main(int argc, char **argv)$/;"	f
 main	src/cc/chunk/ChunkServer_main.cc	/^main(int argc, char **argv)$/;"	f
@@ -7018,6 +7277,7 @@ operator ==	src/cc/meta/base.h	/^	bool operator == (const Key &test) const { ret
 operator []	src/cc/meta/LayoutManager.h	/^		mapped_type& operator[](const key_type& key) {$/;"	f	class:KFS::CSMap
 opname	src/cc/telemetry/packet.h	/^        char opname[OPNAME_LEN];$/;"	m	struct:KFS::TelemetryClntPacket_t
 ops	src/cc/fuse/kfs_fuse_main.cc	/^struct fuse_operations ops = {$/;"	v	typeref:struct:fuse_operations
+optional_handler	src/cc/meta/meta.h	/^    std::vector<string> optional_handler;$/;"	m	class:KFS::MetaFattr
 orderByAge	scripts.solaris/metalogprune.py	/^def orderByAge(this, that):$/;"	f
 org.apache.hadoop.fs.kfs	kfs-hadoop/0.15x/src/java/org/apache/hadoop/fs/kfs/IFSImpl.java	/^package org.apache.hadoop.fs.kfs;$/;"	p
 org.apache.hadoop.fs.kfs	kfs-hadoop/0.15x/src/java/org/apache/hadoop/fs/kfs/KFSImpl.java	/^package org.apache.hadoop.fs.kfs;$/;"	p
@@ -7185,6 +7445,8 @@ path	scripts/kfsfsck.py	/^import os,sys,os.path,getopt$/;"	i
 path	scripts/kfslaunch.py	/^import os,os.path,sys,getopt,popen2$/;"	i
 path	scripts/kfssetup.py	/^import os,sys,os.path,getopt$/;"	i
 path	scripts/kfsshell.py	/^import os,os.path,sys,getopt$/;"	i
+path	src/cc/meta/handler.cc	/^const std::string zinc_handler::path = "\/usr\/local\/";$/;"	m	class:zinc_handler	file:
+path	src/cc/meta/handler.h	/^       static const std::string         path;$/;"	m	class:zinc_handler
 path	src/cc/meta/replay.h	/^	string path;		\/\/!< path name for log file$/;"	m	class:KFS::Replay
 path	src/cc/meta/request.h	/^	string path;	\/\/!< path to look up$/;"	m	struct:KFS::MetaLookupPath
 path	src/python/unittests/dirops.py	/^import os, os.path$/;"	i
@@ -7305,6 +7567,7 @@ publish	src/cc/libkfsIO/TelemetryClient.cc	/^TelemetryClient::publish(struct in_
 push_back	src/cc/chunk/ChunkManager.h	/^        bool push_back(WriteOp* op)$/;"	f	class:KFS::ChunkManager::PendingWrites
 push_front	src/cc/chunk/ChunkManager.h	/^        bool push_front(WriteOp* op)$/;"	f	class:KFS::ChunkManager::PendingWrites
 pushroot	src/cc/meta/kfstree.cc	/^Tree::pushroot(Node *brother)$/;"	f	class:Tree
+put_lib_handler	src/cc/meta/handler.h	/^       char* put_lib_handler(const std::string &app) {$/;"	f	class:zinc_handler
 queue	src/cc/meta/queue.h	/^	Queue queue;$/;"	m	class:KFS::MetaQueue
 rackId	src/cc/chunk/KfsOps.h	/^    int rackId;$/;"	m	struct:KFS::HelloMetaOp
 rackId	src/cc/meta/request.h	/^	int rackId; \/\/!< the rack on which the server is located$/;"	m	struct:KFS::MetaHello
@@ -7566,6 +7829,7 @@ run	scripts/kfslaunch.py	/^    def run(self):$/;"	m	class:Worker
 run	scripts/kfssetup.py	/^    def run(self):$/;"	m	class:InstallWorker
 run	scripts/kfssetup.py	/^    def run(self):$/;"	m	class:UnInstallWorker
 run	scripts/slaves.py	/^    def run(self):$/;"	m	class:Pinger
+runHandler	src/cc/meta/handler.cc	/^runHandler (const std::string handler_key)  {$/;"	f	class:zinc_handler
 run_test	src/python/flogger/flogger.py	/^def run_test(config_file = default_config_file):$/;"	f
 run_test	src/python/rw/rw.py	/^def run_test(config_file = default_config_file):$/;"	f
 runargs	scripts.solaris/kfslaunch.py	/^                runargs = runargs + " -b %s" % (bkup_node)$/;"	v
@@ -8157,6 +8421,8 @@ write_leaves	src/cc/meta/checkpoint.cc	/^Checkpoint::write_leaves()$/;"	f	class:
 write_op	src/python/flogger/flogger.py	/^class write_op(test_op):$/;"	c
 xsputn	src/cc/libkfsIO/IOBuffer.cc	/^std::streamsize IOBuffer::StreamBuffer::xsputn(const char *s, std::streamsize n)$/;"	f	class:IOBuffer::StreamBuffer
 zeroSizes	src/cc/emulator/LayoutEmulator.cc	/^    int &zeroSizes;$/;"	m	class:RackAwareReplicationVerifier	file:
+zinc_handler	src/cc/meta/handler.h	/^       zinc_handler()   {$/;"	f	class:zinc_handler
+zinc_handler	src/cc/meta/handler.h	/^class   zinc_handler    {$/;"	c
 ~ARAChunkCache	src/cc/meta/LayoutManager.h	/^		~ARAChunkCache()$/;"	f	class:KFS::ARAChunkCache
 ~Acceptor	src/cc/libkfsIO/Acceptor.cc	/^Acceptor::~Acceptor()$/;"	f	class:Acceptor
 ~Appender	src/cc/libkfsClient/KfsProtocolWorker.cc	/^        ~Appender()$/;"	f	class:KFS::KfsProtocolWorker::Impl::Appender
@@ -8291,3 +8557,4 @@ zeroSizes	src/cc/emulator/LayoutEmulator.cc	/^    int &zeroSizes;$/;"	m	class:Ra
 ~WritePrepareOp	src/cc/chunk/KfsOps.cc	/^WritePrepareOp::~WritePrepareOp()$/;"	f	class:WritePrepareOp
 ~WriteSyncOp	src/cc/chunk/KfsOps.cc	/^WriteSyncOp::~WriteSyncOp()$/;"	f	class:WriteSyncOp
 ~_force_vfp_to_top	src/cc/libkfsIO/KfsCallbackObj.h	/^    virtual ~_force_vfp_to_top() { };$/;"	f	struct:KFS::_force_vfp_to_top
+~zinc_handler	src/cc/meta/handler.h	/^       ~zinc_handler() {$/;"	f	class:zinc_handler
