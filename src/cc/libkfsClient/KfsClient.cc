@@ -557,6 +557,12 @@ KfsClient::GetReadAheadSize(int fd) const
     return mImpl->GetReadAheadSize(fd);
 }
 
+string
+KfsClient::GetOptionalHandler()
+{
+    return mImpl->GetOptionalHandler();
+}
+
 //
 // Now, the real work is done by the impl object....
 //
@@ -2215,6 +2221,32 @@ KfsClientImpl::GetReadAheadSize(int fd) const
     return (pos.pendingChunkRead ? pos.pendingChunkRead->GetReadAhead() : 0);
 }
 
+///
+/// To allow clients to get Optional Handler String
+///
+string
+KfsClientImpl::GetOptionalHandler()
+{
+	MutexLock l(&mMutex);
+
+    int fd;
+
+    // Non-existent
+    if (!IsFile(pathname)) 
+        return -ENOENT;
+
+    // load up the fte
+    fd = LookupFileTableEntry(pathname);
+    if (fd < 0) {
+        // Open the file for reading...this'll get the attributes setup
+        fd = Open(pathname, 0);
+        // we got too many open files?
+        if (fd < 0)
+            return fd;
+    }
+    return mFileTable[fd]->fattr.optionalHandler;
+
+}
 ///
 /// Helper function that does the work for sending out an op to the
 /// server.

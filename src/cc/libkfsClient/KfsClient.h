@@ -494,6 +494,14 @@ public:
     /// @retval read ahead size
     //
     size_t GetReadAheadSize(int fd) const;
+
+	///
+	///	Get the optional handler for the pathname
+    /// @param[in] pathname	The full pathname of the file such as /../foo
+    /// @retval optionalHandler string
+    ///
+    std::string GetOptionalHandler(const char *pathname);
+
 private:
     KfsClientImpl *mImpl;
 };

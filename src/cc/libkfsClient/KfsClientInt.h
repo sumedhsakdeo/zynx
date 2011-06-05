@@ -711,7 +711,14 @@ public:
     void SetMaxNumRetriesPerOp(int maxNumRetries) {
         mMaxNumRetriesPerOp = maxNumRetries;
     }
-    
+ 
+ 	///
+	///	Get the optional handler for the pathname
+    /// @param[in] pathname	The full pathname of the file such as /../foo
+    /// @retval optionalHandler string
+    ///
+    std::string GetOptionalHandler(const char *pathname);
+   
 private:
      /// Maximum # of files a client can have open.
     static const int MAX_FILES = 512000;
